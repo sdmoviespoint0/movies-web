@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,"types": ["tailwindcss"],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/admin/page.jsx", "src/app/test/page.jsx", "src/app/page.jsx", "src/app/admin/_components/MovieDownloadCard.jsx", "src/components/MovieDetails.jsx", "src/app/api/movies/[id]/route.js", "src/app/[movieSlug]/page.ts"],
+  "exclude": ["node_modules"]
+}
